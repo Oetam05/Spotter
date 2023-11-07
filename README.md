@@ -1,6 +1,6 @@
 # Spotter
 
-![Logo de Spotter](/assets/images/logo.png)
+![Logo de Spotter](/assets/logoG.png)
 
 ## Descripción
 
