@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:spotter/ui/pages/event_info_page.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -81,7 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 index: 3),
           ),
           GestureDetector(
-            onTap: () {              
+            onTap: () {
               // Navigator.push(
               //   context,
               //   MaterialPageRoute(
@@ -95,12 +96,19 @@ class _MyHomePageState extends State<MyHomePage> {
                 index: 4),
           ),
           GestureDetector(
-            onTap: () {              
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(
-              //       builder: (context) => EventInfoPage(index: 0)),
-              // );
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const EventInfoPage(
+                          eventTitle: "Concierto de Rock",
+                          eventDate: "12/11/2023",
+                          eventDescription: "¡Prepárate para una explosión de energía musical! Únete a nosotros en una experiencia de rock inolvidable que te llevará a través de las icónicas melodías y el espíritu vibrante del género. ¡Descubre la potencia del rock en vivo y déjate llevar por la pasión de la música en este emocionante evento que no querrás perderte!",
+                          eventImage:'assets/rock.jpeg' ,
+                          eventLocation: "Centro de Convenciones de Barranquilla",
+                          eventTime: "12:00PM",
+                        )),
+              );
             },
             child: const EventItem(
                 name: 'Concierto de Rock',
